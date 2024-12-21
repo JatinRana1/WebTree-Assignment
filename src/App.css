@@ -1,0 +1,81 @@
+.card {
+    width: 330px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    background: rgba(105, 13, 197, 0.103);
+    gap: 20px;
+    padding: 20px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .card::before {
+    content: "";
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    top: -30%;
+    left: -20%;
+    border-radius: 50%;
+    border: 35px solid rgba(255, 255, 255, 0.102);
+    transition: all 0.8s ease;
+    filter: blur(0.5rem);
+  }
+  
+  .card:hover::before {
+    top: -20%;
+    left: 50%;
+    filter: blur(0rem);
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+
+  .imgSection img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .userDetails {
+    width: 55%;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .userDetails .fullName p {
+    display: inline-block;
+    padding-right: 10px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .userDetails .gender,
+  .userDetails .mobileNumber {
+    font-size: 0.8em;
+    font-weight: 300;
+    color: rgba(240, 248, 255, 0.7);
+    margin: 5px 0 0;
+  }
+  
+  .app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
